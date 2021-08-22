@@ -1,4 +1,4 @@
-COMANDO NO TERMINAL SHELL
+COMANDOS NO TERMINAL SHELL
 
  
 Comandos:
@@ -249,6 +249,7 @@ Contar linhas, palavras e caracteres.
 	wc -c	(caracteres)
 
 
+
 Processos:
 
 
@@ -294,13 +295,13 @@ Rodar processo em segundo plano (background).
 
 Encerrar processo.
 
-	ctrl + c						ou
+	ctrl + c				ou
 
 	kill %[número do jobs]			ou
 
 	kill %[número do processo]		ou
 
-	kill -9 [número do processo]	(força qualquer processo)
+	kill -9 [número do processo]		(força qualquer processo)
 
 
 Outros comandos:
