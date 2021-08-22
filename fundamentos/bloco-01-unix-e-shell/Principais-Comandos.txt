@@ -1,0 +1,351 @@
+COMANDO NO TERMINAL SHELL
+
+ 
+Comandos:
+
+Verificar usuário e permissões.
+
+	who
+
+
+Concatenar comandos.
+
+	|	(pip)   =>  [comando1] | [comando2]
+
+
+Manual de cada comando.
+
+	man [nomeComando]
+
+
+Ver o que faz o comando.
+
+	whatis [nomeComando]
+
+
+Buscar comandos relacionados a um termo.
+
+	apropos [termo]
+
+
+Ir para o diretório raiz (Root)
+
+	/
+
+
+Listar todos os arquivos no diretório.
+
+	ls
+
+
+Listar arquivos dentro dos diretórios filhos.
+
+	ls *
+
+
+Lista arquivos ocultos
+
+	ls -A
+
+
+Lista arquivos ocultos e permissões
+
+	ls -la
+
+	
+	(-)arquivo ou (d)diretório
+
+	Usuário, Grupo, Outros Usuários.
+
+	r = read	w = write	x = execute
+
+
+Alterar as permissões
+
+	chmod [u, g, o, a] [+, -, =]
+
+
+	u = usuário	g = grupo	o = outros usuários	a = todo mundo
+
+	- remover	= deixar igual	+ acrescentar permissão	
+
+
+Substituir caractere desconhecido.
+
+	?
+
+
+Muda de diretório (change directory)
+
+	cd
+
+
+Limpar a tela (ctrl + l)
+
+	clear
+
+
+Criar diretório (make directory)
+
+	mkdir [nomeDiretorio]
+
+
+Voltar um diretório (diretório pai)
+
+	cd ..
+
+
+MostraR caminho completo para o diretório (print working directory)
+
+	pwd
+
+
+Criar um arquivo
+
+	touch [nomeDoArquivo]
+
+
+Criar e adicionar conteúdo no novo arquivo.
+
+	cat > [nomeArquivo]
+	
+	obs.: Se o arquivo já existir ele será apagado e reescrito.
+	Para sair pressione “ctrl + d” (done).
+
+
+Adicionar conteúdo sem sobrescrever o arquivo.
+
+	cat >> [nomeArquivo]
+
+	obs.: Para sair pressione “ctrl + d” (done).
+
+
+Concatenar dois arquivos.
+
+	cat [arquivo1] [arquivo2] > [arquivo3]
+
+
+Copiar um arquivo para o mesmo diretório com novo nome.
+
+	cp [arquivo1.txt] [arquivo2.txt]
+
+
+Mostrar conteúdo do arquivo (concatenated)
+
+	cat [nomeArquivo]
+
+
+Mover um arquivo.
+
+	mv [nomeDoArquivo] [caminhoDeDestino]
+
+
+Remover um arquivo (apagar)
+
+	rm [nomeDoArquivo]
+
+
+Remover diretório vazio (remove directory).
+
+	rmdir [nomeDoDiretorio]
+
+
+Remover diretório mesmo com conteúdo (recursive force).
+
+	rm -rf [nomeDoDiretorio]
+
+
+Apagar todos os “.txt”.
+
+	rm *.txt
+
+
+Mover arquivo.
+
+	mv [nomeArquivo] [destino]/
+
+
+Renomear arquivo ou diretório.
+
+	mv [nome] [novoNome]
+
+
+Exibir todo conteúdo de um arquivo.
+
+	cat [nomeArquivo]
+
+
+Exibir parte do conteúdo por página.
+
+	less [nomeArquivo]
+
+	obs.: Para finalizar tecle q.
+
+
+Exibir parte do conteúdo de um arquivo por página.
+
+	less [nomeDoArquivo]
+
+	obs.: Para finalizar tecle “q”.
+ 	
+	Para ir para a próxima página tecle “barra de espaço”.
+
+
+Exibir em ordem alfabética.
+
+	sort < [nomeArquivo]
+
+	sort [nomeArquivo]
+
+
+Criar um arquivo ordenado a partir de um desorganizado.
+
+	sort < [arquivoDesorganizado] > [arquivoOrganizado]
+
+
+Mostrar as 10 primeiras linhas.
+
+	head [nomeArquivo]
+
+
+Mostrar as 5 primeiras linhas.
+
+	head -5 [nomeArquivo]
+
+
+Mostrar as 10 últimas linhas (cauda).
+
+	tail [nomeArquivo]
+
+
+Mostrar as 5 últimas linhas.
+
+	tail -5 [nomeArquivo]
+
+
+Buscar termo dentro do arquivo.
+
+	grep [termo] [nomeArquivo] 
+
+	grep -i [termo] [nomeArquivo]
+
+	obs.: “-i” desconsidera maiúsculas.
+
+	Para termo composto colocar entre aspas. “termo composto”
+
+	“-iv” inverte a busca e retorna resultados diferentes do “termo”.
+
+	“-in” retorna a linha onde está o termo.
+
+	“-ic” retorna a quantidade de incidência.
+
+
+Contar linhas, palavras e caracteres.
+
+	wc [nomeArquivo]
+
+	wc -w	(palavras)
+	wc - l	(linhas)
+	wc -c	(caracteres)
+
+
+Processos:
+
+
+Exemplo de processo
+
+	sleep 100
+
+
+Listar processos (sistema)
+
+	ps
+
+
+Listar todos os processos.
+
+	ps -A
+
+
+Listar processos do usuário.
+
+	jobs
+
+
+Suspender processo em primeiro plano.
+
+	ctrl + z
+
+
+Retomar processo em background.
+
+	bg %[número do jobs]
+
+
+Trazer do background
+
+	fg %[número do jobs]
+
+
+Rodar processo em segundo plano (background).
+
+	Acrescentar “&” no final.
+
+
+Encerrar processo.
+
+	ctrl + c						ou
+
+	kill %[número do jobs]			ou
+
+	kill %[número do processo]		ou
+
+	kill -9 [número do processo]	(força qualquer processo)
+
+
+Outros comandos:
+
+
+Imprimir um termo.
+
+	echo [termo]
+
+
+Substituir o conteúdo de um arquivo por um termo.
+
+	echo [termo] > [arquivo].txt
+
+
+Acrescentar um termo em um arquivo.
+
+	echo [termo] >> [arquivo].txt
+
+
+Mostrar últimos comandos.
+
+	history
+
+
+mostrar 3 últimos comandos.
+	
+	history | tail -3
+
+
+Procurar por tipo a partir do local: diretório:
+
+	find . -type d [nome ou parte* do nome do diretório]
+
+
+Procurar por tipo a partir do local: arquivo (file):
+
+	find . -type f [nome ou parte* do nome do arquivo]
+
+
+Procurar por nome.
+
+	find . -name [nomeArquivo]
+
+
+Executar arquivo
+
+	./
