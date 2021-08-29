@@ -350,3 +350,25 @@ Procurar por nome.
 Executar arquivo
 
 	./
+Copiar da internet
+
+	curl -o [URL]
+
+	ou
+
+	curl -o [novoNome] [URL]
+
+
+Testar servidor
+
+	ping [URL]
+
+
+Traçar rota
+
+	traceroute [URL]
+
+
+Busscar IP
+
+	nslookup [URL]
