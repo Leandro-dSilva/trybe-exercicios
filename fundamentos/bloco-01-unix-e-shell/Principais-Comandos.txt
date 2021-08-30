@@ -350,6 +350,8 @@ Procurar por nome.
 Executar arquivo
 
 	./
+	
+	
 Copiar da internet
 
 	curl -o [URL]
