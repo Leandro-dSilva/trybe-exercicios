@@ -38,7 +38,7 @@ Aplicar duas classes a um elemento
 	<h4 class=”classe1 classe2”>
 
 
- ncora (link interno)
+Âncora (link interno)
 
 	<a href="#identificador">Texto de exibição</a>
 
@@ -117,6 +117,8 @@ Exemplo de estrutura semântica
 Colocar títulos para tags
 
 	Usar css “display: none;” para ocultar o título
+
+
 Elementos em bloco e em linha
 
 display: inline
@@ -131,7 +133,7 @@ Dois ou mais elementos inline-block em sequência são posicionados lado-a-lado.
 
 Dica de site:
 
- DEV Community: https://dev.to/
+DEV Community: https://dev.to/
 Compartilhamento de artigos para devs.
 
 https://htmlreference.io/
@@ -252,51 +254,51 @@ No arquivo html
 No arquivo css
 
 	.button {
-  color: #fff;
-  background-color: #11a36a;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 2%;
-  line-height: 0%;
-  font-weight: normal;
-}
+	  color: #fff;
+  	  background-color: #11a36a;
+  	  padding: 15px 30px;
+  	  text-decoration: none;
+  	  border-radius: 2%;
+  	  line-height: 0%;
+  	  font-weight: normal;
+	}
 
 
 Exemplo de Barra de rolagem (overflow)
 
-.paragrafo{
-  border: solid 2px;
-  height: 69px;
-  overflow-x: scroll;
-  overflow-y: auto;
-  padding: 142px;
-  width: 153px;
-}
+	.paragrafo{
+	  border: solid 2px;
+	  height: 69px;
+	  overflow-x: scroll;
+	  overflow-y: auto;
+	  padding: 142px;
+	  width: 153px;
+	}
 	
 	Consultar: https://developer.mozilla.org/pt-BR/docs/Web/CSS/overflow
 
 
 Imagem como backgroud de uma div
 
-body {
-  background-image: url(URL);
-}
+	body {
+	  background-image: url(URL);
+	}
 
 
 Usar imagem como capa
 
 	#capa {
-  background-image: url(URL da Imagem);
-  background-size: cover;
-}
+	  background-image: url(URL da Imagem);
+	  background-size: cover;
+	}
 	
 
 
 Empilhar elementos em uma ordem específica
 
 	img {
-  z-index: -1;
-}
+	  z-index: -1;
+	}
 	
 
 A propriedade z-index especifica a ordem da pilha de um elemento.
@@ -306,34 +308,39 @@ Um elemento com uma ordem de pilha maior está sempre na frente de um elemento c
 	Consultar: https://www.w3schools.com/cssref/pr_pos_z-index.asp
 
 
+
 Agrupamento de seletores e pseudo-classe
 
 Agrupamento de seletores pode ser útil para dark theme. Basta agrupar os seletores que sofrerão as mesmas mudanças
 
-	Agrupamento: Basta separar por vírgula os elementos e colocar as propriedades na frente.
 
-p, div {Propriedades}
+- Agrupamento: Basta separar por vírgula os elementos e colocar as propriedades na frente.
 
-Pseudo-classes: [nomeDoElemento]:[pseudoClasse]
+	p, div {Propriedades}
 
-seletor:pseudo-classe {
-  propriedade: valor;
-}
+- Pseudo-classes: [nomeDoElemento]:[pseudoClasse]
+
+	seletor:pseudo-classe {
+  	  propriedade: valor;
+	}
+
 
 
 Muda a cor quando passa o mouse por cima
-li:hover {
-  background-color: green;
-}	
+	
+	li:hover {
+  	  background-color: green;
+	}	
+
 
 Muda a cor quando clica
-li:active {
-  color: white;
-}
+	li:active {
+  	  color: white;
+	}
 
 Para formulários
 
-p:focus
+	p:focus
 
 
 	Consultar: https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes
@@ -342,22 +349,23 @@ p:focus
 	Consultar: https://developer.mozilla.org/pt-BR/docs/Web/CSS/transition
 
 
+
 Combinação e classes descendentes
 
 
-Combinação de classes em um elemento
+- Combinação de classes em um elemento
 
 	<p class=”classe1 classe2”>
 
 
-Aplicar propriedade apenas a classe de uma determinada tag
+- Aplicar propriedade apenas a classe de uma determinada tag
 
 	p.classe1 {propriedades}
 
 	Aplica as propriedades de classe1 apenas aos parágrafos p.
 
 
-Descendência
+- Descendência
 
 	<ul>
 	  <li>
@@ -370,23 +378,27 @@ Descendência
 	ul li p {propriedades}
 
 
-Aplicar propriedade apenas na descendência de uma determinada tag
+- Aplicar propriedade apenas na descendência de uma determinada tag
 
-No html:
-<ul class=”classe1”>
-  <li> 
-		<p>
+	No html:
+	
+	<ul class=”classe1”>
+  	  <li> 
+	    <p>
+
 
 	No css:
-		ul.classe1 li p {propriedades}
+
+	ul.classe1 li p {propriedades}
+	
 	
 
-Divs em linha
+- Divs em linha
 
 	display: inline-block;
 
 
-Flutuar elemento com float
+- Flutuar elemento com float
 
 	float: left;
 
