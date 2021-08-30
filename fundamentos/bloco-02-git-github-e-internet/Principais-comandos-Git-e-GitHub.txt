@@ -1,0 +1,184 @@
+Principais comandos Git e GitHub - Bloco 2
+
+Comandos executados no Terminal Shell
+
+Iniciar e fazer a leitura do diretório
+
+	git init
+
+
+Atualizar um arquivo
+
+	git add [nomeDoArquivo]
+
+
+Atualizar todos os arquivos
+
+	git add .
+
+
+Criar branch
+
+	git branch [nomeDaBranch]
+
+
+Consultar branchs
+
+	git branch
+
+
+Mudar de branch
+
+	git checkout [nomeDaBranch]
+
+
+Gerar e mudar de branch
+
+	git checkout -b [nomeDaBranch]
+
+
+Mudar nome da branch
+
+	git branch -m [nomeAtual] [novoNome]
+
+
+Gerar mensagem de commit
+
+	git commit -m “[mensagem de commit]”
+
+
+Mergear branchs. 
+
+git merge [nomeDaBranch]
+
+obs.: Ir para alguma branch anterior antes. Pode ser a ‘main’.
+
+
+Remover branch
+
+	git branch -d [nomeDaBranch]
+
+Deletar branch do repositório remotamente
+
+	git push origin --delete [nomeDaBranch]
+
+
+Baixar repositório
+
+	git clone [url do repositório]
+
+	obs.: Não usar ‘git init’ quando for clonar um repositório.
+
+Bifurcar um repositório - Fork
+
+	Um fork é uma cópia de um repositório. A bifurcação de um repositório permite que você experimente livremente as alterações sem afetar o projeto original.
+
+	Consultar: https://docs.github.com/pt/get-started/quickstart/fork-a-repo
+
+
+Mostrar histórico de alterações
+
+	git log
+
+
+Remover arquivo
+
+	git rm [nomeDoArquivo]
+
+
+Restaurar arquivo deletado
+
+Pesquise (git log) aplicando filtro (--diff-filter) para arquivos com status Deletado (D) e exiba no modo sumário (--summary)
+
+	git log --diff-filter=D --summary
+
+
+Copiar os 4 primeiros caracteres do log commit exibido.
+
+Executar o comando:
+
+	git checkout [4 números copiados]~1 [nomeDoArquivo]
+
+Exemplo:	git checkout 2652~1 exemplo.txt
+
+
+Ignorar arquivos que você não quer adicionar
+
+Criar arquivo extensão .ignore
+
+	touch .gitignore	(Será um arquivo oculto)
+
+
+Editar git ignore
+
+	cat >> .gitignore
+
+	obs1.: Pode-se adicionar nome específico de arquivo ou nome genérico como *.txt
+	obs2.: Para adicionar diretório use barra no final [nomeDoDiretorio]/
+
+
+Dica de site para arquivos gitignore, mostra arquivos que não precisam ir para o git:
+
+https://www.toptal.com/developers/gitignore
+
+
+
+Criar e vincular GitHub
+
+Criar repositório GitHub. 
+Copiar chave SSH. Está em CODE. 
+(O vínculo da chave SSH precisa ser feito apenas uma vez em um computador).
+Criar pasta no terminal e executar ‘git init’
+Vincular pasta local e repositório
+
+	git remote add origin [Chave SSH]
+
+
+Publicar no repositório remoto
+
+	git push -u origin [nomeDaBranch]
+
+	Obs.: Posteriormente use apenas git push
+
+
+Verificar mudanças no arquivo remoto e atualizar arquivo local
+
+	git fetch
+
+
+Puxar arquivos remotos e atualizar arquivos locais
+
+	git pull
+
+
+Consultar nome do repositório remoto
+
+	git remote -v
+
+
+Comparar diferenças entre arquivos
+
+	git diff
+
+
+Passo a passo para Exercícios:
+
+Cria e abre diretório;
+Inicia branch;
+git checkout - [nomeDaBranch]
+Adiciona arquivos;
+git add [nomeDoArquivo]
+Adiciona commit;
+Visualiza histórico
+git log
+Empurra arquivos;
+git push
+Copia link Pull Request e compartilha no Code Review;
+Leia o código de outras pessoas.
+
+
+Dica de site: renderizador Markdow, usado no README.md
+
+StackEdit converte seu Markdown em HTML em tempo real.
+
+https://stackedit.io/app#
