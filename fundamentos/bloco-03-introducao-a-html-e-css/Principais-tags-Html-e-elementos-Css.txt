@@ -1,0 +1,409 @@
+Principais tags Html e Css
+
+Principais tags HTML
+
+
+DOCTYPE html
+
+	! + enter
+
+
+Comentar
+
+	ctrl + /
+
+
+Selecionar e editar tags semelhantes de uma única vez
+
+	crtl + d
+
+
+Arrastar conteúdo na tela do Code
+
+	Segurar o Alt e arrastar com as setas
+
+
+Identificador
+
+	id="nomeUnico"
+
+
+Classe
+
+	class="NomeDaClasse"
+
+
+Aplicar duas classes a um elemento
+
+	<h4 class=”classe1 classe2”>
+
+
+ ncora (link interno)
+
+	<a href="#identificador">Texto de exibição</a>
+
+
+Abrir link em nova janela. Inserir target= _blank
+
+	<a href="https://blog.betrybe.com/" target="_blank">Blog</a>
+
+
+Inserir foto externa
+
+	<img id="photo" src="URL" alt="Foto de Perfil">
+
+
+Inserir foto de pasta local
+
+	<img id="photo" src="minha_foto.jpeg" alt="Foto de Perfil">
+
+
+Link para arquivo de estilização CSS nomeado como style.css
+
+<head>
+    
+	<link rel="stylesheet" href="style.css">
+</head>
+
+Obs1.: Pode incluir type="text/css"
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+Obs2.: Colocar index.html e style.css na mesma pasta.
+
+
+
+HTML Semântico
+
+Sentido de um elemento HTML. Existe uma padronização para tags html feita pela W3C. 
+<footer> para rodapé, por exemplo. Assim as páginas se tornam mais acessíveis, pois dão significado à página.
+
+Vantagens:
+SEO;
+Usabilidade;
+Acessibilidade;
+Comunicabilidade;
+Impacta screen readers e search engines.
+
+Principais tags:
+
+<header> 	cabeçalho
+<nav>			links de navegação
+<article>	artigo - elementos autocontidos que fazem sentido juntos.
+					use quando tiver início, meio e fim.
+<section>	seção do artigo. A <section> é um tipo de <div> com semântica.
+					Informa que tem uma seção.
+<aside>		conteúdo paralelo, a parte, que pode, ou não, estar ao lado.
+<footer>	rodapé.
+
+Outros:
+<div> 		tag genérica para inblock.
+<span>		tag genérica para texto inline.
+<float>		transforma inline em inblock.
+
+Consulte mais em Semantic HTML https://www.w3schools.com/
+Pesquise quais tags são originalmente display, block ou inline.
+
+Exemplo de estrutura semântica
+
+	<main>
+	  <section>
+	    <article>
+	      <div>
+	        <article>
+	        <article>
+	        <article>
+
+Colocar títulos para tags
+
+	Usar css “display: none;” para ocultar o título
+Elementos em bloco e em linha
+
+display: inline
+Altera uma classe para inline
+
+display: inline-block
+Ocupam a largura do próprio conteúdo.
+Dois ou mais elementos inline-block em sequência são posicionados lado-a-lado.
+É possível alterar as propriedades de largura e tamanho.
+É possível alterar todas as propriedades de margem.
+
+
+Dica de site:
+
+ DEV Community: https://dev.to/
+Compartilhamento de artigos para devs.
+
+https://htmlreference.io/
+Aprenda com um exemplo : htmlreference.io é um guia gratuito para HTML. 
+Possui todos os elementos e atributos .
+
+Semantic HTML https://www.w3schools.com/
+Elementos de html semântico
+
+
+Dica de extensão
+
+Análise semântica
+HTML5 outliner 
+
+
+Principais elementos CSS
+
+
+Retirar valor padrão do navegador. Reset CSS. Use asterisco. 
+
+	*{
+	  margin: 0;
+	  padding: 0;
+	}
+
+
+Padding: uma margem transparente que faz parte do conteúdo.
+
+
+Atribuir propriedade para id
+
+	#nomeUnico {Propriedades CSS}
+
+
+Atribuir propriedades para classe
+
+	.nomeDaClasse {Propriedades CSS}
+
+
+Atribuir fonte
+
+	font-family: [nomeDaFonte];
+
+	Obs1.: Fonte Serif coloca a fonte padrão do computador do cliente.
+	Obs2.: Sans-serif é a fonte mais simples.
+
+
+Fonte reserva
+
+	font-family: [nomeDaFonte1] , [nomeDaFonte2];
+
+
+Exemplos de fonte
+
+	cursive, fantasy, monospace, montserrat.
+
+
+Incorporando link de fontes
+
+Vá até https://fonts.google.com/ 
+Escolha a fonte e selecione os estilos (select this style)
+No canto superior direito tem o ícone para abrir a aba lateral direita, caso não abra sozinha.
+Copie o link e cole na head antes de stylesheet.
+Copie as famílias e cole no arquivo css.
+
+
+Tamanho da fonte
+
+	font-size: [tamanho da fonte]
+
+	Obs.: A fonte pode ser em px, mas também pode ser em em. Significa que 2 em será 2 vezes o tamanho da fonte padrão.
+
+
+Negrito
+
+	font-weight: bold;
+
+
+Itálico
+
+	font-style: italic;
+
+
+Espaçamento entre linhas
+
+	line-height: 40 px;
+
+	Obs.: Pode ser em porcentagem também.
+
+
+Alinhamento
+
+	text-align: center;
+
+
+Centralizar texto
+
+	margin: auto;
+
+
+Sublinhado
+
+	text-decoration: underline;
+
+
+Arredondando bordas de figuras
+
+	border-radius: 50%
+
+
+Exemplo de botão com link externo que abre em nova aba
+
+No arquivo html
+
+	<a class="button" href="http://www.google.com" target="_blank" >botão</a>
+
+No arquivo css
+
+	.button {
+  color: #fff;
+  background-color: #11a36a;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 2%;
+  line-height: 0%;
+  font-weight: normal;
+}
+
+
+Exemplo de Barra de rolagem (overflow)
+
+.paragrafo{
+  border: solid 2px;
+  height: 69px;
+  overflow-x: scroll;
+  overflow-y: auto;
+  padding: 142px;
+  width: 153px;
+}
+	
+	Consultar: https://developer.mozilla.org/pt-BR/docs/Web/CSS/overflow
+
+
+Imagem como backgroud de uma div
+
+body {
+  background-image: url(URL);
+}
+
+
+Usar imagem como capa
+
+	#capa {
+  background-image: url(URL da Imagem);
+  background-size: cover;
+}
+	
+
+
+Empilhar elementos em uma ordem específica
+
+	img {
+  z-index: -1;
+}
+	
+
+A propriedade z-index especifica a ordem da pilha de um elemento.
+
+Um elemento com uma ordem de pilha maior está sempre na frente de um elemento com uma ordem de pilha inferior.
+
+	Consultar: https://www.w3schools.com/cssref/pr_pos_z-index.asp
+
+
+Agrupamento de seletores e pseudo-classe
+
+Agrupamento de seletores pode ser útil para dark theme. Basta agrupar os seletores que sofrerão as mesmas mudanças
+
+	Agrupamento: Basta separar por vírgula os elementos e colocar as propriedades na frente.
+
+p, div {Propriedades}
+
+Pseudo-classes: [nomeDoElemento]:[pseudoClasse]
+
+seletor:pseudo-classe {
+  propriedade: valor;
+}
+
+
+Muda a cor quando passa o mouse por cima
+li:hover {
+  background-color: green;
+}	
+
+Muda a cor quando clica
+li:active {
+  color: white;
+}
+
+Para formulários
+
+p:focus
+
+
+	Consultar: https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes
+
+	Dica: Colocar propriedade transition em estilos que possuem pseudo classes.
+	Consultar: https://developer.mozilla.org/pt-BR/docs/Web/CSS/transition
+
+
+Combinação e classes descendentes
+
+
+Combinação de classes em um elemento
+
+	<p class=”classe1 classe2”>
+
+
+Aplicar propriedade apenas a classe de uma determinada tag
+
+	p.classe1 {propriedades}
+
+	Aplica as propriedades de classe1 apenas aos parágrafos p.
+
+
+Descendência
+
+	<ul>
+	  <li>
+	    <p>
+
+	p é filho de li, que é filho de ul.
+
+	Aplicar propriedade apenas em p dessa descendência
+
+	ul li p {propriedades}
+
+
+Aplicar propriedade apenas na descendência de uma determinada tag
+
+No html:
+<ul class=”classe1”>
+  <li> 
+		<p>
+
+	No css:
+		ul.classe1 li p {propriedades}
+	
+
+Divs em linha
+
+	display: inline-block;
+
+
+Flutuar elemento com float
+
+	float: left;
+
+	Consultar: https://developer.mozilla.org/pt-BR/docs/Web/CSS/float
+	Considere clear também: https://www.w3schools.com/css/css_float.asp
+
+ 
+
+
+
+
+Dica de extensão:
+
+O extensão Sort facilita a organização dos elementos CSS em ordem alfabética, basta selecionar e pressionar shift+alt+s
+
+Dica de site para estilização:
+
+Uma demonstração do que pode ser realizado por meio de design baseado em CSS .
+
+http://csszengarden.com/
