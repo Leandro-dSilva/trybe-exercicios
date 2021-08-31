@@ -5,7 +5,7 @@
 function checkEven(number1, number2, number3) {
   let n1 = number1;
   let n2 = number2;
-  let n3 = number3
+  let n3 = number3;
 
   let oneEven = n1%2 === 0 || n2%2 === 0 || n3%2 === 0;
 
