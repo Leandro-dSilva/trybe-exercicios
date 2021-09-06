@@ -13,9 +13,9 @@ let x;
 let y;
 let l = '';
 
-for (let i1 = 1; i1 <= n; i1 += 1) {
-  x = n-i1;
-  y = i1;
+for (let i = 1; i <= n; i += 1) {
+  x = n-i;
+  y = i;
   let p1 = '';
   for (let i = 0; i < x; i += 1) {
     p1 += ' ';
