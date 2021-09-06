@@ -1,4 +1,4 @@
-// Exercício 02 - Parte II
+// Exercício 03 - Parte II
 // Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
 
 function indexBiggest(numbers) { 
