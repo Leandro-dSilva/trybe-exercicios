@@ -46,7 +46,7 @@ for (let i = 0; i < holidays.length; i += 1) {
 }
 
 // marca sexta-feira
-let fridays = [4, 11, 18, 25];   //marca numeros inseridos aqui
+let fridays = [5, 12, 19, 26];   //marca numeros inseridos aqui
 
 for (let i = 0; i < fridays.length; i += 1) {
   let friday = fridays[i];
@@ -57,8 +57,6 @@ for (let i = 0; i < fridays.length; i += 1) {
     }
   }
 }
-
-
 
 // Exercício 2
 
@@ -73,6 +71,24 @@ function feriadosFunction(feriados) {
   
 }
 
+// Exercício 3
+// function changeColor() {
+//   let fridayElements = document.getElementsByClassName('friday');
+//   for (let i = 0; i < fridayElements.length; i += 1) { 
+//     fridayElements[i].style.color = 'red';
+//     console.log(fridayElements[i]);
+//   }
+// }
+
+// newButton.addEventListener("click", changeColor);
+
+newButton.addEventListener('click', function (event) {
+  let fridayElements = document.getElementsByClassName('friday');
+  for (let i = 0; i < fridayElements.length; i += 1) { 
+    fridayElements[i].style.color = 'red';
+    console.log(fridayElements[i]);
+  }
+});
 
 
 
