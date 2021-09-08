@@ -30,6 +30,19 @@ for (let i = 1; i < dezDaysList.length; i += 1) {
   ulReceptor.appendChild(newli);        
 }
 
+// Exercício 2
+
+let newButton = document.createElement('button');
+newButton.id = 'btn-holiday';
+newButton.innerText = 'Feriados'
+
+let containerButton = document.querySelector('.buttons-container');
+containerButton.appendChild(newButton);
+
+function feriadosFunction(feriados) {
+  
+}
+
 
 
 
