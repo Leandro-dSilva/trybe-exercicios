@@ -99,20 +99,75 @@ SextaButton.addEventListener('click', function () {
 });
 
 // Exercício 6
-for (let i = 0; i < dezDaysList.length; i++) {
 
-  let li = document.getElementsByClassName('day')[i];
+ulReceptor.addEventListener('mouseover', function(event){
+  if (event.target.tagName === 'LI') {
+    event.target.style.fontSize = "2em";
+  }
+} );
 
-  li.addEventListener('mouseover', function() {  
-    li.style.fontSize = "120%"
-  });
+ulReceptor.addEventListener('mouseout', function(event){
+  if (event.target.tagName === 'LI') {
+    event.target.style.fontSize = "20px";
+  }
+} );
+
+
+
+
+
+
+
+// for (let i = 0; i < dezDaysList.length; i += 1) {
+
+//   let li = document.getElementsByClassName('day')[i];
+
+//   console.log(li);
+
+//   li.addEventListener('mouseover', function(event){
+//     event.target.style.fontSize = "120%";
+//   });
   
-  li.addEventListener('mouseleave', function(){  
-    li.style.fontSize = "100%"
-  });
-}
+//   li.addEventListener('mouseout', function(){  
+//     li.style.fontSize = "100%";
+//   });
+// }
   
 
+// event.target  ?????
+
+
+
+
+
+// Exercício 7
+
+//cria tag span
+
+//<div>"my-tasks" adota span
+
+//adiciona texto digitado em span 
+
+
+
+
+
+
+
+
+
+// <input type="text" id="task-input" placeholder="Escreva seu compromisso"></input>    
+
+
+
+// let techElement = document.querySelector('.tech');
+// let inputTexto = document.querySelector('#input');
+
+// function changeText() {
+//   techElement.innerText = inputTexto.value;
+// }
+
+// inputTexto.addEventListener("change", changeText);
 
 
 
