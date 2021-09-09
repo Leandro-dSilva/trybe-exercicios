@@ -98,27 +98,25 @@ SextaButton.addEventListener('click', function () {
   }
 });
 
+// Exercício 6
+for (let i = 0; i < dezDaysList.length; i++) {
+
+  let li = document.getElementsByClassName('day')[i];
+
+  li.addEventListener('mouseover', function() {  
+    li.style.fontSize = "120%"
+  });
+  
+  li.addEventListener('mouseleave', function(){  
+    li.style.fontSize = "100%"
+  });
+}
+  
 
 
 
 
 
 
-
-
-
-
-
-
-// feriadosButton.addEventListener('click', function (event) {
-//   let fridayElements = document.getElementsByClassName('friday');
-//   for (let i = 0; i < fridayElements.length; i += 1) { 
-//     if (fridayElements[i].style.backgroundColor === 'rgb(180, 250, 180))') {
-//       fridayElements[i].style.backgroundColor = '#777';
-//     } else {
-//       fridayElements[i].style.backgroundColor = 'rgb(180, 250, 180))';
-//     }
-//   }
-// });
 
 
