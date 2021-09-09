@@ -112,42 +112,37 @@ ulReceptor.addEventListener('mouseout', function(event){
   }
 } );
 
-
-
-
-
-
-
-// for (let i = 0; i < dezDaysList.length; i += 1) {
-
-//   let li = document.getElementsByClassName('day')[i];
-
-//   console.log(li);
-
-//   li.addEventListener('mouseover', function(event){
-//     event.target.style.fontSize = "120%";
-//   });
-  
-//   li.addEventListener('mouseout', function(){  
-//     li.style.fontSize = "100%";
-//   });
-// }
-  
-
-// event.target  ?????
-
-
-
-
-
 // Exercício 7
+function addTask(addText) {
+  let divMyTasks = document.querySelector('.my-tasks');
+  let newSpan = document.createElement('span')
+  newSpan.innerText = addText;
+  divMyTasks.appendChild(newSpan);  
+}
 
-//cria tag span
+addTask('Hellooo!')
 
-//<div>"my-tasks" adota span
 
-//adiciona texto digitado em span 
 
+// //cria tag span
+// let newSpan = document.createElement('span');
+// console.log(newSpan);
+
+// //adiciona texto digitado em span 
+// let inputTexto = document.querySelector('#task-input');
+// console.log(inputTexto);
+
+// function changeText() {
+//   newSpan.innerText = inputTexto.value;
+//   console.log(inputTexto.value);
+// }
+
+// inputTexto.addEventListener("change", changeText);
+
+// //<div>"my-tasks" adota span  
+// let divMyTasks = document.getElementsByClassName('my-tasks');
+// console.log(divMyTasks);
+// divMyTasks.appendChild(newSpan);
 
 
 
