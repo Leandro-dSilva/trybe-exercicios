@@ -58,6 +58,7 @@ for (let i = 0; i < fridays.length; i += 1) {
   }
 }
 
+
 // Exercício 2
 let feriadosButton = document.createElement('button');
 feriadosButton.id = 'btn-holiday';
@@ -65,6 +66,7 @@ feriadosButton.innerText = 'Feriados'
 
 let containerButton = document.querySelector('.buttons-container');
 containerButton.appendChild(feriadosButton);
+
 
 // Exercício 3
 feriadosButton.addEventListener('click', function () {
@@ -77,6 +79,7 @@ feriadosButton.addEventListener('click', function () {
     }
   }
 });
+
 
 // Exercício 4
 let SextaButton = document.createElement('button');
@@ -98,6 +101,7 @@ SextaButton.addEventListener('click', function () {
   }
 });
 
+
 // Exercício 6
 
 ulReceptor.addEventListener('mouseover', function(event){
@@ -112,6 +116,7 @@ ulReceptor.addEventListener('mouseout', function(event){
   }
 } );
 
+
 // Exercício 7
 function addTask(addText) {
   let divMyTasks = document.querySelector('.my-tasks');
@@ -121,6 +126,7 @@ function addTask(addText) {
 }
 
 addTask('Hellooo!');
+
 
 // Exercício 8
 function addColor(addColor) {
@@ -133,6 +139,7 @@ function addColor(addColor) {
 
 addColor('yellow');
 
+
 // Exercício 9
 
 let selectDiv = document.querySelector('.task');
@@ -140,6 +147,7 @@ let selectDiv = document.querySelector('.task');
 selectDiv.addEventListener('click', function(event){
   event.target.classList.toggle('task-selected');
 } );
+
 
 // Exercício 10
 ulReceptor.addEventListener('click', function(event){
@@ -151,67 +159,32 @@ ulReceptor.addEventListener('click', function(event){
 } );
 
 
+// Bônus
+let appointmentButton = document.querySelector('#btn-add')
 
+function addAppointment() {
+    let appointment = document.getElementsByTagName('h3')[1];
+    let divAppointment = document.createElement('div');
+    let inputTexto = document.querySelector('#task-input');
+    divAppointment.innerText = inputTexto.value;
+    appointment.appendChild(divAppointment);
+    inputTexto.value = '';
+}
 
+appointmentButton.addEventListener('click', function() {
+  let inputTexto = document.querySelector('#task-input');
+  if (inputTexto.value === '') {
+    alert("Oops!!! Você precisa digitar um texto  =)");
+  } else {
+  addAppointment();
+  }
+} );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// //cria tag span
-// let newSpan = document.createElement('span');
-// console.log(newSpan);
-
-// //adiciona texto digitado em span 
-// let inputTexto = document.querySelector('#task-input');
-// console.log(inputTexto);
-
-// function changeText() {
-//   newSpan.innerText = inputTexto.value;
-//   console.log(inputTexto.value);
-// }
-
-// inputTexto.addEventListener("change", changeText);
-
-// //<div>"my-tasks" adota span  
-// let divMyTasks = document.getElementsByClassName('my-tasks');
-// console.log(divMyTasks);
-// divMyTasks.appendChild(newSpan);
-
-
-
-
-
-
-
-
-// <input type="text" id="task-input" placeholder="Escreva seu compromisso"></input>    
-
-
-
-// let techElement = document.querySelector('.tech');
-// let inputTexto = document.querySelector('#input');
-
-// function changeText() {
-//   techElement.innerText = inputTexto.value;
-// }
-
-// inputTexto.addEventListener("change", changeText);
-
-
-
-
+window.addEventListener('keypress', function(e) {
+  if (e.key === 'Enter') {
+    addAppointment();
+  }
+});
 
 
 
