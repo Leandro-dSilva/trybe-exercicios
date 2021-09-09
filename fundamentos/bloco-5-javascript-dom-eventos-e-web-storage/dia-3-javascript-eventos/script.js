@@ -67,39 +67,28 @@ feriadosButton.innerText = 'Feriados'
 let containerButton = document.querySelector('.buttons-container');
 containerButton.appendChild(feriadosButton);
 
-function feriadosFunction(feriados) {
-  
-}
-
 // Exercício 3
 feriadosButton.addEventListener('click', function () {
   let feriadosElements = document.getElementsByClassName('holiday');
-  console.log(feriadosElements);
   for (let i = 0; i < feriadosElements.length; i += 1) { 
-    if (feriadosElements[i].style.color === 'red') {
-      feriadosElements[i].style.color = '#777';
+    if (feriadosElements[i].style.backgroundColor == 'rgb(180, 250, 180)') {
+      feriadosElements[i].style.backgroundColor = 'rgb(238, 238, 238)';
     } else {
-      feriadosElements[i].style.color = 'red';
+      feriadosElements[i].style.backgroundColor = 'rgb(180, 250, 180)';
     }
   }
 });
 
-
-
-
-
-
-
-
+// Exercício 4
 
 
 // feriadosButton.addEventListener('click', function (event) {
 //   let fridayElements = document.getElementsByClassName('friday');
 //   for (let i = 0; i < fridayElements.length; i += 1) { 
-//     if (fridayElements[i].style.color === 'red') {
-//       fridayElements[i].style.color = '#777';
+//     if (fridayElements[i].style.backgroundColor === 'rgb(180, 250, 180))') {
+//       fridayElements[i].style.backgroundColor = '#777';
 //     } else {
-//       fridayElements[i].style.color = 'red';
+//       fridayElements[i].style.backgroundColor = 'rgb(180, 250, 180))';
 //     }
 //   }
 // });
