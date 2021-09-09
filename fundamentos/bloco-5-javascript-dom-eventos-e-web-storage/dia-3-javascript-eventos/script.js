@@ -81,6 +81,26 @@ feriadosButton.addEventListener('click', function () {
 
 // Exercício 4
 
+let SextaButton = document.createElement('button');
+SextaButton.id = 'btn-friday';
+SextaButton.innerText = 'Sexta-feira';
+
+containerButton.appendChild(SextaButton);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // feriadosButton.addEventListener('click', function (event) {
 //   let fridayElements = document.getElementsByClassName('friday');
