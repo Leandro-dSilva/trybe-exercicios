@@ -72,25 +72,15 @@ function feriadosFunction(feriados) {
 }
 
 // Exercício 3
-// function changeColor() {
-//   let fridayElements = document.getElementsByClassName('friday');
-//   for (let i = 0; i < fridayElements.length; i += 1) { 
-//     fridayElements[i].style.color = 'red';
-//     console.log(fridayElements[i]);
-//   }
-// }
-
-// newButton.addEventListener("click", changeColor);
-
 newButton.addEventListener('click', function (event) {
   let fridayElements = document.getElementsByClassName('friday');
   for (let i = 0; i < fridayElements.length; i += 1) { 
-    fridayElements[i].style.color = 'red';
-    console.log(fridayElements[i]);
+    if (fridayElements[i].style.color === 'red') {
+      fridayElements[i].style.color = '#777';
+    } else {
+      fridayElements[i].style.color = 'red';
+    }
   }
 });
-
-
-
 
 
