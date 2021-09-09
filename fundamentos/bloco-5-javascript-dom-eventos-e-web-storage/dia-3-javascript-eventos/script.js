@@ -123,16 +123,35 @@ function addTask(addText) {
 addTask('Hellooo!');
 
 // Exercício 8
-function addSubtitle(addColor) {
+function addColor(addColor) {
   let divMyTasks = document.querySelector('.my-tasks');
-  let newSpan = document.createElement('div');
-  newSpan.className = 'task';
-  // newSpan.innerText = subtitle;
-  newSpan.style.backgroundColor = addColor;
-  divMyTasks.appendChild(newSpan);  
+  let newDiv = document.createElement('div');
+  newDiv.className = 'task';
+  newDiv.style.backgroundColor = addColor;
+  divMyTasks.appendChild(newDiv);  
 }
 
-addSubtitle('yellow');
+addColor('yellow');
+
+// Exercício 9
+
+let selectDiv = document.querySelector('.task');
+
+selectDiv.addEventListener('click', function(event){
+  event.target.classList.toggle('task-selected');
+} );
+
+// Exercício 10
+ulReceptor.addEventListener('click', function(event){
+  if (event.target.tagName === 'LI' && event.target.style.backgroundColor === 'yellow') {
+    event.target.style.backgroundColor = 'unset';
+  } else if (event.target.tagName === 'LI') {
+    event.target.style.backgroundColor = 'yellow';
+  }
+} );
+
+
+
 
 
 
