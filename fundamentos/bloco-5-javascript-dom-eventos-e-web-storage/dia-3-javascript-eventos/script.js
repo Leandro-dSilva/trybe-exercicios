@@ -120,7 +120,33 @@ function addTask(addText) {
   divMyTasks.appendChild(newSpan);  
 }
 
-addTask('Hellooo!')
+addTask('Hellooo!');
+
+// Exercício 8
+function addSubtitle(addColor) {
+  let divMyTasks = document.querySelector('.my-tasks');
+  let newSpan = document.createElement('div');
+  newSpan.className = 'task';
+  // newSpan.innerText = subtitle;
+  newSpan.style.backgroundColor = addColor;
+  divMyTasks.appendChild(newSpan);  
+}
+
+addSubtitle('yellow');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
