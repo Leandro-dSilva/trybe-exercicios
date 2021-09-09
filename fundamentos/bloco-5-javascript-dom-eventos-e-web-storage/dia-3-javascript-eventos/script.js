@@ -59,7 +59,6 @@ for (let i = 0; i < fridays.length; i += 1) {
 }
 
 // Exercício 2
-
 let feriadosButton = document.createElement('button');
 feriadosButton.id = 'btn-holiday';
 feriadosButton.innerText = 'Feriados'
@@ -80,7 +79,6 @@ feriadosButton.addEventListener('click', function () {
 });
 
 // Exercício 4
-
 let SextaButton = document.createElement('button');
 SextaButton.id = 'btn-friday';
 SextaButton.innerText = 'Sexta-feira';
@@ -88,7 +86,17 @@ SextaButton.innerText = 'Sexta-feira';
 containerButton.appendChild(SextaButton);
 
 
-
+// exercício 5
+SextaButton.addEventListener('click', function () {
+  let SextaElements = document.getElementsByClassName('friday');
+  for (let i = 0; i < SextaElements.length; i += 1) { 
+    if (SextaElements[i].style.color == 'rgb(6, 81, 6)') {
+      SextaElements[i].style.color = 'rgb(119, 119, 119)';
+    } else {
+      SextaElements[i].style.color = 'rgb(6, 81, 6)';
+    }
+  }
+});
 
 
 
