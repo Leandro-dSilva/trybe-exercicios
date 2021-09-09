@@ -60,27 +60,48 @@ for (let i = 0; i < fridays.length; i += 1) {
 
 // Exercício 2
 
-let newButton = document.createElement('button');
-newButton.id = 'btn-holiday';
-newButton.innerText = 'Feriados'
+let feriadosButton = document.createElement('button');
+feriadosButton.id = 'btn-holiday';
+feriadosButton.innerText = 'Feriados'
 
 let containerButton = document.querySelector('.buttons-container');
-containerButton.appendChild(newButton);
+containerButton.appendChild(feriadosButton);
 
 function feriadosFunction(feriados) {
   
 }
 
 // Exercício 3
-newButton.addEventListener('click', function (event) {
-  let fridayElements = document.getElementsByClassName('friday');
-  for (let i = 0; i < fridayElements.length; i += 1) { 
-    if (fridayElements[i].style.color === 'red') {
-      fridayElements[i].style.color = '#777';
+feriadosButton.addEventListener('click', function () {
+  let feriadosElements = document.getElementsByClassName('holiday');
+  console.log(feriadosElements);
+  for (let i = 0; i < feriadosElements.length; i += 1) { 
+    if (feriadosElements[i].style.color === 'red') {
+      feriadosElements[i].style.color = '#777';
     } else {
-      fridayElements[i].style.color = 'red';
+      feriadosElements[i].style.color = 'red';
     }
   }
 });
+
+
+
+
+
+
+
+
+
+
+// feriadosButton.addEventListener('click', function (event) {
+//   let fridayElements = document.getElementsByClassName('friday');
+//   for (let i = 0; i < fridayElements.length; i += 1) { 
+//     if (fridayElements[i].style.color === 'red') {
+//       fridayElements[i].style.color = '#777';
+//     } else {
+//       fridayElements[i].style.color = 'red';
+//     }
+//   }
+// });
 
 
