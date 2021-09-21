@@ -38,9 +38,9 @@ Faça as validações inicialmente pelo HTML
 - Estado - Select
     Todos os estados do Brasil
     Utilize estruturas de repetição via JavaScript para gerar os <option>
-
-- Campo obrigatório
-    Tipo - Radio Button
+    Campo obrigatório
+    
+- Tipo - Radio Button
     Casa, Apartamento
     Campo obrigatório
 
