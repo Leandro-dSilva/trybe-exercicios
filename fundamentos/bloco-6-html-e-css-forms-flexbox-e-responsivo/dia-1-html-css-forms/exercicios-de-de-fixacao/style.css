@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: #82C0F9;
+}
+
+#form-container {
+  box-shadow: 0 0 8px gray;
+  margin-top: 10%;
+  padding: 2%;
+  background-color: #F6F9FF;
+  border-radius: 3px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin-top: auto;
+  text-align: center;
+}
+
+button {
+  margin-top: 15%;
+}
+
+p {
+  margin-bottom: auto;
+}
+
+label {
+  margin-top: 2%;
+}
