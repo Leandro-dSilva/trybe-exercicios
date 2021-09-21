@@ -3,8 +3,8 @@ body {
 }
 
 #form-container {
-  text-align: center;
   margin: 8% auto 20%;
+  text-align: center;
 }
 
 #message-error {
