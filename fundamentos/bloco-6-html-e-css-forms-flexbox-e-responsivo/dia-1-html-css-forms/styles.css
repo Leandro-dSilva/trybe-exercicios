@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(229, 230, 230);
+}
+
+#form-container {
+  text-align: center;
+  margin: 8% auto 20%;
+}
+
+#message-error {
+  color: red;
+  font-size: large;
+}
