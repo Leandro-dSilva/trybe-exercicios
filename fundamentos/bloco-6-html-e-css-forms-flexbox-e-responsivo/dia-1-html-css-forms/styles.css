@@ -1,5 +1,10 @@
 body {
   background-color: rgb(229, 230, 230);
+  text-align: center;
+}
+
+h1 {
+  margin-top: 5%;
 }
 
 #form-container {
