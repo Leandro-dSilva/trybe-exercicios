@@ -4,97 +4,93 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <title>Formulário de Currículo | Bibliotecas</title>
   <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  
+  <!-- <link rel="stylesheet" href="styles.css"> -->
 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
-
+</head>
+<body>
+  <h1>Formulário de Currículo</h1>
+  <!-- Parte I -->
+  <form action="" method="GET" id="form-container" class="js-form form>
+    <div class="row">
+      <div class="form-group col-md-6">
+        <label for=""><p>Nome</p></label>
+        <input type="text" maxlength="40" name="Nome" id="name-imput" class="form__input form-control" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="" class="form-group col-md-6"><p>Email</p></label>
+        <input type="email" name="Email" maxlength="50" id="email-input" class="form__input form-control" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for=""><p>CPF</p></label>
+      <input type="text" name="CPF" maxlength="11" id="cpf-input" class="form__input form-control" required>
+    </div>
+    <div class="form-group">
+      <label for=""><p>Endereço</p></label>
+      <input type="text" maxlength="200" name="Endereco" id="address-input" class="form__input form-control" required>
+    </div>
+    <div class="form-group">
+      <label for=""><p>Cidade</p></label>
+      <input type="text" maxlength="25" name="Cidade" id="city-input" class="form__input form-control" required>
+    </div>
+    <br>
+    <br>
+    <div class="form-group">
+      <label for="state"><p>Estado</p></label>
+      <select name="Estado" id="state" required>
+        <option value="">Selecione</option>
+      </select> 
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="home" ><p>Moradia</p><input type="radio" name="TipoMoradia" value="casa" id="home" class="form__radio" required>Casa</label>
+      <label for="apartment"><input type="radio" name="TipoMoradia" value="apartamento" id="apartment" class="form__radio">Apartamento</label>
+    </div>
+    <br>
+    <br>
+    <!-- Parte II -->
+    <div class="form-group">
+      <label for=""><p id="resum">Resumo do currículo</p></label>
+      <textarea name="Resumo" id="" cols="30" rows="10" maxlength="1000" placeholder="Resumo do currículo" class="form__textarea form-control" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for=""><p>Cargo</p></label>
+      <input type="text" name="Cargo" maxlength="40" class="form__input form-control" required>
+    </div>
+    <div class="form-group">
+      <label for=""><p>Descrição do cargo</p></label>
+        <input type="text" name="Descricao" maxlength="500" class="form__input form-control" required>
+    </div>
+    <div class="form-group">
+      <label for=""><p>Data de início</p></label>
+        <input type="text" name="DataInicio" id="datepicker" class="form__input form-control" required>
+    </div>
+    <br>
+    <br>
+    <!-- Parte III -->
+      <button type="reset" class="form__btn btn btn-primary">Limpar</button>
+      <button type="submit" id="submit-button" class="form__btn btn btn-primary">Enviar</button>
+  </form>
+  <script src="./path/to/just-validate.min.js"></script>
+</body>
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
 
-</head>
-<body>
-  <h1>Formulário de Currículo</h1>
-  <!-- Parte I -->
-  <form action="" method="GET" id="form-container">
-    <label for="">
-      <p>Nome</p>
-      <input type="text" maxlength="40" name="Nome" id="name-imput" required>
-    </label>
-    <label for="">
-      <p>Email</p>
-      <input type="email" name="Email" maxlength="50" id="email-input" required>
-    </label>
-    <label for="">
-      <p>CPF</p>
-      <input type="text" name="CPF" maxlength="11" id="cpf-input" required>
-    </label>
-    <label for="">
-      <p>Endereço</p>
-      <input type="text" maxlength="200" name="Endereco" id="address-input" required>
-    </label>
-    <label for="">
-      <p>Cidade</p>
-      <input type="text" maxlength="25" name="Cidade" id="city-input" required>
-    </label>
-    <br>
-    <br>
-    <label for="state"><p>Estado</p>
-      <select name="Estado" id="state" required>
-        <option value="">Selecione</option>
-      </select>
-    </label>
-    <br>
-    <br>
-    <label for="home"><p>Moradia</p>
-      <input type="radio" name="TipoMoradia" value="casa" id="home" required>Casa
-    </label>
-    <label for="apartment">
-      <input type="radio" name="TipoMoradia" value="apartamento" id="apartment">Apartamento
-    </label>
-    <br>
-    <br>
-    <br>
-    <!-- Parte II -->
-    <label for="">
-      <p id="resum">Resumo do currículo</p>
-      <textarea name="Resumo" id="" cols="30" rows="10" maxlength="1000" placeholder="Resumo do currículo" required></textarea>
-    </label>
-    <label for="">
-      <p>Cargo</p>
-      <input type="text" name="Cargo" maxlength="40" required>
-    </label>
-    <label for="">
-      <p>Descrição do cargo</p>
-      <input type="text" name="Descricao" maxlength="500" required>
-    </label>
-    <label for="">
-      <p>Data de início</p>
-      <input type="text" name="DataInicio" id="datepicker" required>
-    </label>
-    <br>
-    <br>
-    <!-- Parte III -->
-    <label for="">
-      <button type="reset">Limpar</button>
-    </label>
-    <label for="">
-      <button type="submit" id="submit-button">Enviar</button>
-    </label>
-    <br>
-    <br>
-    <div id="message-error"></div>
-    <div id="confirm-your-data"></div>
-  </form>
-</body>
 <script src="script.js"></script>
 <script src="pikaday.js"></script>
 <script>
     var picker = new Pikaday({ field: document.getElementById('datepicker') });
 </script>
+
+
+
 </html>

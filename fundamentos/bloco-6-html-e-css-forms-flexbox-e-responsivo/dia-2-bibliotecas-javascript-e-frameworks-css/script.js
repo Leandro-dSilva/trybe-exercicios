@@ -42,8 +42,6 @@ for (let i = 0; i < states.length; i +=1) {
   stateSelect.appendChild(option);
 }
 
-// form.nodeList
-
 function confirm() {
   confirmYourData.innerHTML = '';
 
@@ -68,7 +66,7 @@ function confirm() {
   confirmYourData.appendChild(confirmButton);
 }
 
-submitButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  confirm();
-});
+// submitButton.addEventListener('click', (event) => {
+//   event.preventDefault();
+//   confirm();
+// });
