@@ -7,6 +7,10 @@ body {
   text-align: center;
 }
 
+#resum {
+  display: none;
+}
+
 #message-error {
   color: red;
   font-size: large;
