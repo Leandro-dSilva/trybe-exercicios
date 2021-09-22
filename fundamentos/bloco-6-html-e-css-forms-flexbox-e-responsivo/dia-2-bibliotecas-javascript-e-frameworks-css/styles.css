@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(229, 230, 230);
+  text-align: center;
+}
+
+h1 {
+  margin-top: 5%;
+}
+
+#form-container {
+  margin: 8% auto 20%;
+  text-align: center;
+}
+
+#resum {
+  display: none;
+}
+
+#message-error {
+  color: red;
+  font-size: large;
+}
