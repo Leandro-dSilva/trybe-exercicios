@@ -1,9 +1,4 @@
 let stateSelect = document.querySelector('#state');
-let dateInput = document.querySelector('#date');
-let submitButton = document.querySelector('#submit-button');
-let messageError = document.querySelector('#message-error');
-let ps = document.getElementsByTagName('p');
-let confirmYourData = document.querySelector('#confirm-your-data')
 
 let states = [
   'Acre',
@@ -41,32 +36,3 @@ for (let i = 0; i < states.length; i +=1) {
   option.innerText = `${state}`;
   stateSelect.appendChild(option);
 }
-
-function confirm() {
-  confirmYourData.innerHTML = '';
-
-  let h2 = document.createElement('h2')
-  h2.innerText = 'Confirme seus dados';
-  confirmYourData.appendChild(h2);
-
-  for (let i = 0; i < ps.length; i += 1) {
-    let div = document.createElement('div');
-    div.innerText = ps[i].innerText
-    div.style.fontSize = 'larger';
-    div.style.margin = '2% auto 0.5%';
-    confirmYourData.appendChild(div);
-    let div2 = document.createElement('div');
-    div2.innerText = ps[i].nextElementSibling.value
-    confirmYourData.appendChild(div2);
-  }
-  let confirmButton = document.createElement('button');
-  confirmButton.type = 'submit'
-  confirmButton.innerText = 'Confirmar';
-  confirmButton.style.margin = '4%';
-  confirmYourData.appendChild(confirmButton);
-}
-
-// submitButton.addEventListener('click', (event) => {
-//   event.preventDefault();
-//   confirm();
-// });
