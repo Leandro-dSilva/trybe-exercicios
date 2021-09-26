@@ -2,7 +2,7 @@ Esse é um projeto para o conteúdo de `CSS Flexbox`.
 
 ### Antes de iniciar
 
-Crie um fork desse projeto e para isso siga esse [tutorial de como realizar um fork](https://guides.github.com/activities/forking/).
+Crie um fork [desse projeto](https://github.com/tryber/exercise-tech-gallery) e para isso siga esse [tutorial de como realizar um fork](https://guides.github.com/activities/forking/).
 
 Após feito o fork, clone o repositório criado para o seu computador.
 
