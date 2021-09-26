@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEXBOX - ALIGN SELF</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        display: flex;
+        height: 300px;
+        margin: auto;
+        width: 500px;
+      }
+
+      .keep {
+        align-self: center;
+        background-color: #FAA488;
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        list-style: none;
+      }
+
+      .change {
+        /* Altere a propriedade align-self. */
+
+        /* valores de palavras-chave */
+        /* align-self: auto; */
+        /* align-self: normal; */
+
+        /* Alinhamento de posicionamento */
+        /* align-self não recebe valores left e right */
+        /* Coloca o item em torno do centro */
+        align-self: center; 
+        /* Coloca o item no início */
+        /* align-self: start;  */
+        /* Coloca o item no fim */
+        /* align-self: end;  */
+        /* Alinha o item flush no início */
+        /* align-self: self-start;  */
+        /* Alinha o item flush no fim */
+        /* align-self: self-end;  */
+        /* Coloca o item flex no início */
+        /* align-self: flex-start;  */
+        /* Coloca o item flex no fim */
+        /* align-self: flex-end;  */
+
+        /* Alinhamento a partir da baseline */
+        /* align-self: baseline; */
+        /* align-self: first baseline; */
+        /* align-self: last baseline; */
+        /* Estica itens de tamanho 'auto' para encaixar no container */
+        /* align-self: stretch;  */
+
+        /* Alinhamento com Oveflow */
+        /* align-self: safe center; */
+        /* align-self: unsafe center; */
+
+        /* Valores globais */
+        /* align-self: inherit; */
+        /* align-self: initial; */
+        /* align-self: unset; */
+        
+        background-color: #FBD26A;
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        list-style: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul class="container">
+      <li class="keep">REFERÊNCIA</li>
+      <li class="change">ELEMENTO TESTE</li>
+      <li class="keep">REFERÊNCIA</li>
+    </ul>
+  </body>
+</html>
