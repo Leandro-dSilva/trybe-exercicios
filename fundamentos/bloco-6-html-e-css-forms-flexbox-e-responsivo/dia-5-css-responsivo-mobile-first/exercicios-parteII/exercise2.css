@@ -33,3 +33,21 @@ article p {
   font-size: 2.3vh;
   line-height: 3.1vh;
 }
+
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+  body {
+    background-color: rgb(237, 239, 243);
+    margin: 60px 50px;
+  }
+
+  article h1 {
+    margin: 45px auto;
+    font-size: 7vh;
+  }
+  
+  article p {
+    text-align: justify;
+    font-size: 5vh;
+    line-height: 9vh;
+  }
+}
