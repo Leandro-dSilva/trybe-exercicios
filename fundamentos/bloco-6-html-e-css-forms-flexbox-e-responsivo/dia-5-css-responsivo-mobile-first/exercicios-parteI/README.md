@@ -1,3 +1,8 @@
+# Parte I 
+
+## Criar uma página para uma tela pequena
+
+
 Comece o exercício analisando a página em uma tela de tamanho pequeno, para simular como ela pode parecer em um dispositivo móvel (você pode usar o Chrome para isso, veja no detalhe nos Recursos adicionais ).
 
 Ao pensar no design de uma tela pequena primeiro, estamos aplicando a abordagem do mobile first . Fazendo isso, começamos com um design básico (mínimo denominador comum) e então trabalhamos em melhorias mais sofisticadas para os navegadores com funcionalidades avançadas e layouts específicos.
