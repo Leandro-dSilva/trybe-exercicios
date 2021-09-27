@@ -42,12 +42,38 @@ article p {
 
   article h1 {
     margin: 45px auto;
-    font-size: 7vh;
+    font-size: 5vh;
   }
   
   article p {
     text-align: justify;
-    font-size: 5vh;
-    line-height: 9vh;
+    font-size: 3vh;
+    line-height: 4vh;
   }
+}
+
+@media screen and (min-width: 1100px) {
+  header h1 {
+    font-size: xxx-large;
+    margin: 45px auto 55px;
+
+  }
+
+  body {
+    background-color: rgb(242, 246, 255);
+    margin: 60px 50px;
+  }
+
+  article h1 {
+    margin: 45px auto;
+    font-size: 4vh;
+  }
+  
+  article p {
+    text-align: justify;
+    font-size: 2.8vh;
+    line-height: 4.5vh;
+  }
+
+
 }
