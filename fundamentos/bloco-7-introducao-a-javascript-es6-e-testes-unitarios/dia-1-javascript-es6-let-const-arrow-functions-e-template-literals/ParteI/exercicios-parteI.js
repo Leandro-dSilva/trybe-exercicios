@@ -22,4 +22,4 @@ oddsAndEvens.sort((a, b) => {
   return 0;
 });
 
-console.log(oddsAndEvens); 
+console.log(`Os números ${oddsAndEvens} se encontram de forma crescente!`); 
