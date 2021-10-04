@@ -37,3 +37,15 @@ c) Faça uma chamada com um número divisível por 5 e verifique se o retorno é
 d) Faça uma chamada com um número que não é divisível por 3 ou 5 e verifique se o retorno é o esperado
 
 e) Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado
+
+4. Para as funções encode e decode crie os seguintes testes em Jest:
+
+a) Teste se encode e decode são funções;
+
+b) Para a função encode teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente;
+
+c) Para a função decode teste se os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u , respectivamente;
+
+d) Teste se as demais letras/números não são convertidos para cada caso;
+
+e) Teste se a string que é retornada pelas funções têm o mesmo número de caracteres que a string passada como parâmetro.
