@@ -38,6 +38,7 @@ d) Faça uma chamada com um número que não é divisível por 3 ou 5 e verifiqu
 
 e) Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado
 
+
 4. Para as funções encode e decode crie os seguintes testes em Jest:
 
 a) Teste se encode e decode são funções;
