@@ -70,7 +70,7 @@
   expect(5).toBe("5") // Exemplo de falha
 
 
-2. Igualdade de objetos e arrays
+2. Igualdade de arrays e objetos.
 
   expect(arr).toEqual([1, 2, 3]); // OK
   expect(obj).toEqual({ a: 1, b: 2, c: 3}); // OK
