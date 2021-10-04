@@ -1,1 +1,3 @@
-  
+const script = require('./script');
+
+

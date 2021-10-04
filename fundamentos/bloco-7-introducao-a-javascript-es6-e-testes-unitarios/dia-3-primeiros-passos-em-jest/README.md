@@ -51,7 +51,7 @@
 
 8. Criar arquivo de testes com base em [nomeDoArquivo].js
 
-  [nomeDoArquivo].test.js
+  [nomeDoArquivo].spec.js
 
 
 9. Rodar testes
@@ -130,23 +130,38 @@ String com expressões regulares - [toMatch](https://jestjs.io/docs/pt-BR/expect
 
 
 
-## Elementos para comunicação entre .js e .test.js
+## Elementos para comunicação entre .js e .spec.js
 
 1. No final do arquivo .js insira:
 
-  module.exports = [nomeDoArquivo];
+  Para 1 função:
 
-  obs.: não precisa da terminação .js
+  module.exports = [nomeDaFuncao];
 
 
-2. No início do arquivo .test.js insira:
+  Para 2 funções:
 
-  const [nomeDoArquivo] = require('./[nomeDoArquivo]');
+  module.exports = { [Funcao1], [funcao2] };
+
+
+2. No início do arquivo .spec.js insira:
+
+  Para 1 função:
+
+    const [nomeDaFuncao] = require('./[nomeDoArquivo]');
+
+
+  Para 2 funções:
+   
+    const { [Funcao1], [funcao2] } = require('./[nomeDoArquivo]');
+
+    
+    obs.: não precisa da terminação .js
 
 
   Se o arquivo estiver em uma sub-pasta utilize o seguinte:
 
-  const [nomeDoArquivo] = require('../[nomeDaSubPasta]/[nomeDoArquivo]');
+  const [nomeDaFuncao] = require('../[nomeDaSubPasta]/[nomeDoArquivo]');
 
 
 
