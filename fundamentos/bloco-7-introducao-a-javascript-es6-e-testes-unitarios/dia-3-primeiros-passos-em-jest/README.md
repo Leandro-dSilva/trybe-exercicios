@@ -173,10 +173,10 @@ String com expressões regulares - [toMatch](https://jestjs.io/docs/pt-BR/expect
 describe('Título do Bloco', () => {
 
   it('Título para os testes', () => {
-    expect(teste-1)).toEqual(Retorno do teste 1);
-    expect(teste-2)).toEqual(Retorno do teste 2);
-    expect(teste-3)).toEqual(Retorno do teste 3);
-    expect(teste-4)).toEqual(Retorno do teste 4);
+    expect(teste-1).toEqual(Retorno do teste 1);
+    expect(teste-2).toEqual(Retorno do teste 2);
+    expect(teste-3).toEqual(Retorno do teste 3);
+    expect(teste-4).toEqual(Retorno do teste 4);
   });
 
   it('Título para os testes', () => {
