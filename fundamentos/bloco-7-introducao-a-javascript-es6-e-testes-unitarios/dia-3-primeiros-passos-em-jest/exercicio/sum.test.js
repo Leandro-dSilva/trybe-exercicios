@@ -1,6 +1,6 @@
 const sum = require('../exercicio/sum');
 
-describe ('Resultado da soma', () => {
+describe ('Testes para sum', () => {
   it ('Teste se o retorno de sum(4, 5) é 9', () => {
     expect(sum(4, 5)).toEqual(9);
   });
