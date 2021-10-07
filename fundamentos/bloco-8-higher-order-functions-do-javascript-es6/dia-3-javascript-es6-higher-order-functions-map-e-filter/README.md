@@ -17,3 +17,8 @@
 
 
 6. Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
+
+
+7. Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
+
+
