@@ -10,3 +10,5 @@
 3. Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia.
 
 
+4. Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
+
