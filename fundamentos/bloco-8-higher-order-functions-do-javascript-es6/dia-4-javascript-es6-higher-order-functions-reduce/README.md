@@ -11,3 +11,6 @@
 
 
 4. Encontre o livro com o maior nome.
+
+
+5. Dada o array de nomes, retorne a quantidade de vezes em que aparecem a letra a maiúscula ou minúscula.
