@@ -28,3 +28,8 @@ rectangles.forEach((rectangle) => {
 ***Dica: use object destructuring.***
 
 
+
+4. Escreva uma função filterPeople que, dada uma lista de pessoas, retorna todas as pessoas australianas que nasceram no século 20:
+***Dica: use object destructuring .***
+
+
