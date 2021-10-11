@@ -33,9 +33,20 @@ rectangles.forEach((rectangle) => {
 ***Dica: use object destructuring .***
 
 
+
 5.  - Escreva a função swap , que dado um array de 3 elementos, retorna um novo array com o primeiro e terceiro elementos trocados. Detalhe: você precisa fazer essa função gastando 1 linha só:
 ***Dica: use array destructuring .***
 
 
+
 6.  Suponha que você esteja lidando com carros e, da forma como o problema lhe foi entregue, cada carro é modelado como um array. Porém, essa modelagem está baixo nível. Cria uma função toObject que, dada uma lista, retorna um objeto representando o carro:
 ***Dica: use array destructuring e abbreviation object literal.***
+
+
+
+7. Escreva uma função shipLength que, dado um objeto representando um navio, retorna o comprimento dele, mostrando também a devida unidade de comprimento:
+***Dica: use object destructuring .***
+
+
+
+8.
