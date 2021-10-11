@@ -1,9 +1,18 @@
-### Exercícios de fixacao
+### Exercícios
 
-**Spread Operator**
+1. Dado o código abaixo, complete-o de forma que seja impressa a área dos 3 retângulos. O código deve retornar em sequência 2 , 15 e 54 .
 
-Para fixar e praticar, vamos fazer uma salada de frutas com itens adicionais que você desejar. Faça uma função chamada fruitSalad passando como parâmetro specialFruit e additionalItens , faça a função retornar uma lista única contendo todos os itens da nossa salada de frutas usando o spread .
+***Dica: use spread operator***
 
-***Obs.:***
+const rectangleArea = (width, height) => width * height;
 
-Os outros enunciados estão em seus respectivos arquivos.
+const rectangle1 = [1, 2];
+const rectangle2 = [3, 5];
+const rectangle3 = [6, 9];
+const rectangles = [rectangle1, rectangle2, rectangle3];
+
+rectangles.forEach((rectangle) => {
+  rectangleArea() // altere a chamada da funcao rectangleArea
+  console.log(rectangle[0] * rectangle[1]);
+});
+
