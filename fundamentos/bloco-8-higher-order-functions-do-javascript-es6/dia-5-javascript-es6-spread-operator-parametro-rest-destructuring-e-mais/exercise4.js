@@ -33,7 +33,7 @@ const people = [
 const filterPeople = (who) => {
   return who
     .filter(({bornIn, nationality}) => 
-    (bornIn > 1901 && nationality === 'Australian')); 
+    (bornIn > 1900 && nationality === 'Australian')); 
 }
 
 console.log(filterPeople(people));
