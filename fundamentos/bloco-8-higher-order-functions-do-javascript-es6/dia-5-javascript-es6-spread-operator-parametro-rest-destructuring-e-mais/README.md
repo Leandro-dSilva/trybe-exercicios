@@ -24,4 +24,7 @@ rectangles.forEach((rectangle) => {
 
 
 
-3. 
+3. Escreva a função personLikes , que dado um objeto de parâmetro que representa uma pessoa, retorna todos os gostos daquela pessoa, conforme mostrado em exercise3.js .
+***Dica: use object destructuring.***
+
+
