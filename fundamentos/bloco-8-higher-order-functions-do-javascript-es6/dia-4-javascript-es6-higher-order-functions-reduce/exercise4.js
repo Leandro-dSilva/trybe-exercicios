@@ -79,8 +79,10 @@ const expectedResult = {
 
 function longestNamedBook() {
   // escreva seu código aqui
-  return books.map((book) => book.name)
+  const biggestName = books.map((book) => book.name)
     .reduce((acc, cv) => (acc.length > cv.length) ? acc : cv, '');
+
+  return books.find((book) => book.name === biggestName);
 }
 
 console.log(longestNamedBook());
