@@ -37,6 +37,6 @@ const getMessage = (...message) => {
   (message[0] === null) ? console.log(message[1]) : console.log(message[0]);
 }
 
-// getPokemonDetails(({name}) => name === 'Squirtle', getMessage);
+getPokemonDetails(({name}) => name === 'Squirtle', getMessage);
 
 module.exports = getPokemonDetails;
