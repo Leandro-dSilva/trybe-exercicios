@@ -18,3 +18,4 @@ Tente descobrir qual url vamos utilizar para buscar as informações que precisa
 4. Conseguiu mostrar as moedas na tela? Agora, que tal usar uma Higher Order Function para filtrar o array das moedas para mostrar apenas as 10 primeiras?
 
 5. Não se esqueça de estilizar a página conforme o seu estilo (tanto no CSS quanto no HTML).
+
