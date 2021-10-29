@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+  background-color: rgb(41, 187, 187);
+}
+
+.NameH1 {
+  margin: 4%;
+}
+
+.App {
+  text-align: center;
+  background-color: rgb(41, 46, 46);
+  margin: 10%;
+}
