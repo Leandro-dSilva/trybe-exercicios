@@ -1,6 +1,14 @@
-# DIA 4
+## Bloco 3 - Introdução à HTML e CSS
 
-No dia 4 do bloco 3 aprendemos HTML semântico, posicionando seus elementos de acordo com o seu sentido e pesquisando as documentações HTML.
+Neste bloco aprendi a estruturar páginas HTML estilizadas com CSS.
 
-Dessa maneira sou capaz de criar páginas semanticamente válidas, de tal maneira que sua acessibilidade é levada em consideração melhorando seu ranqueamento e motores de buscas como o Google.
 
+* O conteúdo foi dividido em quatro partes:
+
+1. Usar as principais tags do HTML para criar a estrutura das páginas web.
+
+2. Selecionar elementos HTML e estilizá-los com CSS.
+
+3. Alterar o posicionamento dos elementos na página e compreender como algumas propriedades alteram as dimensões dos elementos
+
+4. Aprender sobre o significado que cada elemento HTML carrega e como isso impacta a acessibilidade da página e a interpretação do conteúdo por indexadores de pesquisa, como o Google.
