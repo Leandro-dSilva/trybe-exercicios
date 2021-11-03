@@ -12,7 +12,7 @@ Nesta segunda parte sobre JavaScript , aprendi duas das principais estruturas de
 
 ### Por que isso é importante?
 
-A manipulação de Arrays está presente no dia a dia do desenvolvedor. Usa-se arrays frequentemente para armazenamento dados.
+A manipulação de Arrays está presente no dia a dia do desenvolvedor. Usa-se arrays frequentemente para armazenamento de dados.
 
 
 ## Exercícios
