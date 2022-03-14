@@ -29,6 +29,7 @@ c) Utilize then e catch para manipular a Promise retornada pela função:
 
  ___
 
+##### 3. Reescreva o código do exercício anterior para que utilize async/await .
 
 
 
