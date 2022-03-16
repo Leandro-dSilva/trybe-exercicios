@@ -4,14 +4,14 @@ const app = express(); // 1
 
 app.get('/hello', handleHelloWorldRequest); // 2
 
-const PORT = 3002;
+const PORT = 3001;
 
 app.listen(PORT, () => {
   console.log(`Aplicação ouvindo na porta ${PORT}`);
 }); // 3
 
 function handleHelloWorldRequest(req, res) {
-  res.status(200).send('Hello World!'); // 4
+  res.status(200).send('<b>Hello</b> World!'); // 4
 }
 
 // 1 Criar uma nova aplicação Express;
