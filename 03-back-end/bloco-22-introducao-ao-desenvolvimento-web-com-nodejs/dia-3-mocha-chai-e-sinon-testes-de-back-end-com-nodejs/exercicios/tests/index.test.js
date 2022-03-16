@@ -38,4 +38,18 @@ describe("1) Chama a função testaNumero", () => {
       });
     });
   });
+
+  describe("Quando o parâmetro não e um número", () => {
+    describe("A resposta", () => {
+      it("é uma string", () => {
+        expect(testaNumero("notNumber")).to.be.a("string");
+      });
+
+      it("o valor deve ser um número", () => {
+        expect(testaNumero("notNumber")).to.be.equals(
+          "o valor deve ser um número"
+        );
+      });
+    });
+  });
 });

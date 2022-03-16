@@ -15,3 +15,19 @@ ___
 - Descreva todos os testes que serão feitos utilizando its ;
 
 - Crie as asserções validando se os retornos de cada cenário tem o tipo e o valor esperado.
+
+____
+
+##### Exercício 2 : Implemente a função apresentada no exercício 1, garantindo que ela irá passar em todos os testes que você escreveu.
+
+___
+
+##### Exercício 3 Adicione à função um tratamento para casos em que o parâmetro informado não seja do tipo Number .
+
+</br>
+
+- Adicione o cenário em seu arquivo de testes, passando um valor de tipo diferente a Number para a função;
+
+- Adicione uma asserção para esperar que o valor retornado para esse caso seja igual uma string "o valor deve ser um número";
+
+- Implemente em sua função tal validação para que o teste passe.
