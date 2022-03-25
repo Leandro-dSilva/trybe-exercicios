@@ -5,7 +5,7 @@ function isValid(firstName, lastName, email, password) {
   if (!lastName) return { error: true, message: "Erro no campo 'lastName'" };
   if (!email) return { error: true, message: "Erro no campo 'email'" };
 
-  if (!password || password.length < 6)
+  if (!password || password.length < 6 || typeof password !== 'string')
     return {
       error: true,
       message: "O campo 'password' deve ter pelo menos 6 caracteres",
@@ -14,13 +14,14 @@ function isValid(firstName, lastName, email, password) {
   return true;
 }
 
+async function create(firstName, lastName, email, password) {
+  const query =
+    'INSERT INTO users_crud.users (firstName, lastName, email, password) VALUES (?, ?, ?, ?);';
+
+  connection.execute(query, [firstName, lastName, email, password]);
+}
+
 module.exports = {
   isValid,
+  create,
 };
-
-// {
-//   "firstName": "Calebe",
-//   "lastName": "Junior",
-//   "email": "calebe.junior@gmail.com",
-//   "password": "d496d5ea2442"
-// }

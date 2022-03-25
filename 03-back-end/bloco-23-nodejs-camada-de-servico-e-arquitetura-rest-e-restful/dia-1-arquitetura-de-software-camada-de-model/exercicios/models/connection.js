@@ -6,7 +6,7 @@ const connection = mysql.createPool({
   host: 'localhost',
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
-  database: 'model_example',
+  database: 'users_crud',
 });
 
 module.exports = connection;

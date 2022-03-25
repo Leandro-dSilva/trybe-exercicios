@@ -8,14 +8,14 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => res.send('Hello World!'));
 
-app.post('/user', (req, res) => {
+app.post('/user', async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
   const validation = User.isValid(firstName, lastName, email, password);
 
-  if (validation.error)
-    return res.status(400).json({ message: validation.message });
+  if (validation.error) return res.status(400).json(validation);
 
-  res.status(201).send('Usuário cadastrado!');
+  await User.create(firstName, lastName, email, password);
+  res.status(201).json({ message: 'Usuário cadastrado!' });
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
