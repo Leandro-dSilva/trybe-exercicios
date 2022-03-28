@@ -18,7 +18,8 @@ async function create(firstName, lastName, email, password) {
   const query =
     'INSERT INTO users_crud.users (firstName, lastName, email, password) VALUES (?, ?, ?, ?);';
 
-  connection.execute(query, [firstName, lastName, email, password]);
+  return connection.execute(query, [firstName, lastName, email, password])
+    .then(([result]) => ({ id: result.insertId, firstName, lastName, email }));
 }
 
 module.exports = {

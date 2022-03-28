@@ -14,8 +14,8 @@ app.post('/user', async (req, res) => {
 
   if (validation.error) return res.status(400).json(validation);
 
-  await User.create(firstName, lastName, email, password);
-  res.status(201).json({ message: 'Usuário cadastrado!' });
+  const createUser = await User.create(firstName, lastName, email, password);
+  res.status(201).json({ createUser });
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
