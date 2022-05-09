@@ -1,0 +1,22 @@
+# versão simplificada
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: node index.js
+
+# exemplo de utilização do heroku.yml para construir imagens Docker
+# setup:
+#   addons:
+#     - plan: heroku-postgresql
+#       as: DATABASE
+# build:
+#   docker:
+#     web: Dockerfile
+#     worker: worker/Dockerfile
+# release:
+#   command:
+#     - ./deployment-tasks.sh
+#   image: worker
+# run:
+#   web: node index.js
