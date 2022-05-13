@@ -43,6 +43,11 @@ class BooksController {
             yield this.bookService.update(id, book);
             res.status(http_status_codes_1.StatusCodes.NO_CONTENT).end();
         });
+        this.remove = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            const id = Number(req.params.id);
+            yield this.bookService.remove(id);
+            res.status(http_status_codes_1.StatusCodes.OK).json({ message: 'Book deleted successfully' });
+        });
     }
 }
 exports.default = BooksController;

@@ -44,5 +44,14 @@ class BookService {
             return this.model.update(id, book);
         });
     }
+    remove(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const bookFound = yield this.model.getById(id);
+            if (!bookFound) {
+                throw new restify_errors_1.NotFoundError('NotFoundError');
+            }
+            this.model.remove(id);
+        });
+    }
 }
 exports.default = BookService;
