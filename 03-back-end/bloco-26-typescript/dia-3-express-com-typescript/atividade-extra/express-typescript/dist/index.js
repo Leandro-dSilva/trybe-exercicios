@@ -6,13 +6,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const http_status_codes_1 = require("http-status-codes");
 require("express-async-errors");
+const books_routes_1 = __importDefault(require("./routes/books.routes"));
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 const PORT = 8000;
 app.get('/', (req, res) => {
     res.status(http_status_codes_1.StatusCodes.OK).send('Express + TypeScript');
 });
-// coloque ele após a declaração de outros middlewares
+app.use(books_routes_1.default);
+// coloque esse tratamento após a declaração de outros middlewares
 app.use((err, req, res, next) => {
     const { name, message, details } = err;
     console.log(`name: ${name}`);
