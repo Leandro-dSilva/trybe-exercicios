@@ -31,5 +31,8 @@ class BookService {
             return book;
         });
     }
+    create(book) {
+        return this.model.create(book);
+    }
 }
 exports.default = BookService;
