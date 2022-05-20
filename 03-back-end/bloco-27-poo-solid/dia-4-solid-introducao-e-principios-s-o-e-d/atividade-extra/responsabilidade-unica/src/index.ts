@@ -55,8 +55,7 @@ const updateApprovalData = (student: Student): void => {
   console.log(`A pessoa com nome ${student.name} foi aprovada!`);
 
   student.disciplines.forEach(({ name, letterGrade }) =>
-    console.log(`${name}: ${letterGrade}`),
-  );
+    console.log(`${name}: ${letterGrade}`)); 
 };
 
 function setApproved(students: Student[]): void {
