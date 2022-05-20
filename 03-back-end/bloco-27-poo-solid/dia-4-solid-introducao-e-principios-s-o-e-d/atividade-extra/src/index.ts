@@ -31,12 +31,14 @@ const getGradeLetter = (gradeNumber: number): string => {
 /* Coletar notas */
 const getLetterGrades = (discipline: Discipline): Discipline => ({
   ...discipline,
-  letterGrade: getGradeLetter(discipline.grade)});
+  letterGrade: getGradeLetter(discipline.grade),
+});
 
 /* "Converter" */
 const percentageGradesIntoLetters = (student: Student): Student => ({
   ...student,
-  disciplines: student.disciplines.map(getLetterGrades)});
+  disciplines: student.disciplines.map(getLetterGrades),
+});
 
 /* "Determinar" */
 const approvedStudents = ({ disciplines }: Student): boolean =>
@@ -47,7 +49,8 @@ const updateApprovalData = (student: Student): void => {
   console.log(`A pessoa com nome ${student.name} foi aprovada!`);
 
   student.disciplines.forEach(({ name, letterGrade }) =>
-    console.log(`${name}: ${letterGrade}`));
+    console.log(`${name}: ${letterGrade}`),
+  );
 };
 
 function setApproved(students: Student[]): void {
